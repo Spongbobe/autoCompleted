@@ -58,45 +58,49 @@ namespace slide_show
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Escape)
+            if(selectedPath.Length>0)
             {
-                if (WindowState == WindowState.Normal)
+                if (e.Key == Key.Escape)
                 {
-                    WindowState = WindowState.Maximized;
+                    if (WindowState == WindowState.Normal)
+                    {
+                        WindowState = WindowState.Maximized;
+                    }
+                    else
+                    {
+                        WindowState = WindowState.Normal;
+
+                    }
                 }
-                else
+
+                if (e.Key == Key.Left)
                 {
-                    WindowState = WindowState.Normal;
+
+                    if (index > 0)
+                    {
+
+                        index--;
+                        var uri = new Uri(files[index]);
+                        var img2 = new BitmapImage(uri);
+
+                        img.Source = img2;
+                    }
+
+                }
+                else if (e.Key == Key.Right)
+                {
+                    if (index < files.Length - 1)
+                    {
+                        index++;
+                        var uri = new Uri(files[index]);
+                        var img2 = new BitmapImage(uri);
+
+                        img.Source = img2;
+                    };
 
                 }
             }
-
-            if (e.Key == Key.Left)
-            {
-
-                if (index >0)
-                {
-
-                    index--;
-                    var uri = new Uri(files[index]);
-                    var img2 = new BitmapImage(uri);
-
-                    img.Source = img2;
-                }
-
-            }
-            else if(e.Key == Key.Right)
-            {
-                if(index < files.Length-1)
-                {
-                    index++;
-                    var uri = new Uri(files[index]);
-                    var img2 = new BitmapImage(uri);
-
-                    img.Source = img2;
-                };
-
-            }
+           
 
 
             
