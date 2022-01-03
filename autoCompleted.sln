@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autoCompleted", "autoCompleted\autoCompleted.csproj", "{73EB0C5B-240B-4D7B-B2AD-436DEF31872A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "slide-show", "slide-show\slide-show.csproj", "{C69FA3C2-F706-4725-B02A-B1C0EDAF76A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73EB0C5B-240B-4D7B-B2AD-436DEF31872A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EB0C5B-240B-4D7B-B2AD-436DEF31872A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EB0C5B-240B-4D7B-B2AD-436DEF31872A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EB0C5B-240B-4D7B-B2AD-436DEF31872A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C69FA3C2-F706-4725-B02A-B1C0EDAF76A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C69FA3C2-F706-4725-B02A-B1C0EDAF76A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C69FA3C2-F706-4725-B02A-B1C0EDAF76A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C69FA3C2-F706-4725-B02A-B1C0EDAF76A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0355E210-997A-4FE6-BBAB-509E7CB3C0B9}
+	EndGlobalSection
+EndGlobal
